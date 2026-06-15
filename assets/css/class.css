@@ -1,0 +1,40 @@
+.main-bg {
+    background-image: url('../img/main.svg');
+    background-position: center center;
+    background-size: cover;
+    color: var(--secundary-color);
+}
+
+.font-bg {
+    color: var(--secundary-color);
+    background-color: var(--primary-color);
+}
+
+.main-content {   
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 8rem var(--gap);   
+}
+
+
+
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu-spacing {
+    height: 65px;
+}
+
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+
+
