@@ -1,5 +1,6 @@
 .main-bg {
-    background-image: url('../img/main.svg');
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0.90) 100%),
+        url('../img/subtle-prism.svg');
     background-position: center center;
     background-size: cover;
     color: var(--secundary-color);
@@ -10,14 +11,11 @@
     background-color: var(--primary-color);
 }
 
-.main-content {   
+.main-content {
     max-width: 120rem;
     margin: 0 auto;
-    padding: 8rem var(--gap);   
+    padding: 8rem var(--gap);
 }
-
-
-
 
 .menu-content {
     display: flex;
@@ -36,5 +34,88 @@ body .full-width {
     flex: 1 1 100%;
 }
 
+.botao, .botao-logo {
+    background-color: #23A718;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 16px 32px;
+    text-decoration: none;
+    box-shadow: 0.3rem 0.3rem 2rem rgba(88, 88, 88, 0.4);
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
+.botao:hover,.botao-logo:hover {
+    transition: all 200ms ease-in-out;
+    background-color: #176410;
+}
+
+.botao-transparente {
+    font-size: 15px;
+    border-radius: 8px;
+    border: 2px solid var(--bg-color);
+    background-color: transparent;
+    color: var(--secundary-color);
+    text-underline-offset: 4px;
+    padding: 16px 32px;
+    box-shadow: 0.3rem 0.3rem 2rem rgba(88, 88, 88, 0.4);
+}
+
+.botao-transparente:hover {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    transition: all 200ms ease-in-out;
+}
+
+
+.duvida {
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.duvida h6 {
+  display: flex;
+  border: 2px solid var(--secundary-color);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.duvida .paragrafo {
+  border-right: 1px solid var(--secundary-color);
+  border-bottom: 1px solid var(--secundary-color);
+  border-left: 1px solid var(--secundary-color);
+  border-radius: 0 0 8px 8px;
+  margin-top: -20px;
+  padding: 12px 24px;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 200ms ease-out;
+  font-size: 2.5rem;
+}
+
+.duvida h6::after {
+  content: "+";
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.duvida.ativa .paragrafo {
+  height: fit-content;
+  opacity: 1;
+  padding: 24px;
+}
+
+.duvida.ativa h6::after {
+  content: "-";
+}
