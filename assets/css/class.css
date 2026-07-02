@@ -1,93 +1,100 @@
 .main-bg {
-    background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0.90) 100%),
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0.90) 100%),
     url('../img/subtle-prism.svg');
-    background-position: center center;
-    background-size: cover;
-    color: var(--secundary-color);
+  background-position: center center;
+  background-size: cover;
+  color: var(--secundary-color);
 }
 
 .font-bg {
-    color: var(--secundary-color);
-    background-color: var(--primary-color);
+  color: var(--secundary-color);
+  background-color: var(--primary-color);
 }
 
-.main-content {   
-    max-width: 120rem;
-    margin: 0 auto;
-    padding: 8rem var(--gap);   
+.main-content {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 8rem var(--gap);
 }
 
 .menu-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 0;
-    padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .menu-spacing {
-    height: 65px;
+  height: 65px;
 }
 
 body .full-width {
-    width: 100%;
-    flex: 1 1 100%;
+  width: 100%;
+  flex: 1 1 100%;
 }
 
 .botao {
-    background-color: #23A718;
-    border-radius: 8px;
-    font-size: 15px;
-    color: #FFFFFF;
-    padding: 16px 32px;
-    text-decoration: none;
+  background-color: #23A718;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #FFFFFF;
+  padding: 16px 32px;
+  text-decoration: none;
 }
 
 .botao-transparente {
-    font-size: 15px;
-    border-radius: 8px;
-    border: 2px solid var(--bg-color);
-    background-color: transparent;
-    color:var(--secundary-color);
-    text-underline-offset: 4px;
-    padding: 16px 32px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 2px solid var(--bg-color);
+  background-color: transparent;
+  color: var(--secundary-color);
+  text-underline-offset: 4px;
+  padding: 16px 32px;
 }
 
 .duvida {
-    position: relative;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.duvida h2 {
-    border: 2px solid #FF725E;
-    border-radius: 8px;
-    cursor: pointer; 
-    padding: 24px;
-}
-
-.duvida img {
-    position: absolute;
-    top: 32px;
-    right: 24px;
+.duvida h6 {
+  display: flex;
+  border: 2px solid var(--secundary-color);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 12px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .duvida .paragrafo {
-    border-right: 1px solid #FF725E; 
-    border-bottom: 1px solid #FF725E; 
-    border-left: 1px solid #FF725E; 
-    border-radius: 0 0 8px 8px;
-    margin-top: -45px;
-    padding: 0px 24px;
-    height: 0;
-    opacity: 0;
-    /* overflow: hidden;  */
-    transition: .3s;   
+  border-right: 1px solid var(--secundary-color);
+  border-bottom: 1px solid var(--secundary-color);
+  border-left: 1px solid var(--secundary-color);
+  border-radius: 0 0 8px 8px;
+  margin-top: -20px;
+  padding: 12px 24px;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 200ms ease-out;
+  font-size: 2.5rem;
+}
+
+.duvida h6::after {
+  content: "+";
+  font-size: 4rem;
+  font-weight: bold;
 }
 
 .duvida.ativa .paragrafo {
-    height: fit-content;
-    opacity: 1;
-    padding: 24px;
+  height: fit-content;
+  opacity: 1;
+  padding: 24px;
 }
 
-
-
+.duvida.ativa h6::after {
+  content: "-";
+}

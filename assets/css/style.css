@@ -48,12 +48,8 @@
     justify-content: center;
 }
 
-.grid-main-heading {
-    margin-bottom: 1rem;
-}
-
-.grid-description {
-    padding-bottom: 5rem;
+.grid-main-heading, .grid-description {
+    margin-bottom: 5rem;
 }
 
 .grid {
@@ -69,15 +65,15 @@
     gap: var(--gap);
 }
 
-.grid h3 {
+.grid h6 {
     font-size: 3rem;
     position: relative;
     padding-left: 5rem;
     padding-bottom: 3rem;
-
+    margin-top: 3rem;
 }
 
-.grid h3::before {
+.grid h6::before {
     counter-increment: grid-counter;
     content: counter(grid-counter);
     position: absolute;
@@ -100,86 +96,7 @@
 }
 
 .feedback-img img:hover {
-    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
-}
-
-.contact-form {
-    grid-column: span 2;
-}
-
-.contact-form .form-grid {
-    border: none;
-    display: flex;
-    flex-flow: row wrap;
-    gap: var(--gap);
-}
-
-.responsive-table {
-    overflow: hidden;
-    overflow-x: auto;
-}
-
-.form-grid legend {
-    font-style: italic;
-    font-size: 1.6rem;
-    margin-bottom: 3rem;
-}
-
-.form-group label {
-    font-size: 3rem;
-    flex: 1 1 320px;
-    display: block;
-    margin-bottom: 1rem;
-}
-
-.form-group input,
-.form-group textarea {
-    border: none;
-    padding: 1.5rem 2rem;
-    background-color: var(--primary-color);
-    width: 100%;
-    font-size: 3rem;
-    outline: none;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    box-shadow: 0 0 10px 2px var(--bg-color);
-}
-
-.form-group button {
-    border: 0.5rem solid var(--bg-color);
-    padding: 1.5rem 2rem;
-    background-color: inherit;
-    color: var(--secundary-color);
-    font-size: 3rem;
-    cursor: pointer;
-    transition: all 300ms ease-in-out;
-}
-
-.form-group button:hover {
-    background-color: var(--bg-color);
-    color: var(--primary-color);
-    border: 0.5rem solid var(--primary-color);
-}
-
-.form-group ::placeholder {
-    color: var(--bg-color);
-    font-size: 2rem;
-}
-
-.footer {
-    text-align: center;
-    font-size: 1.6rem;
-}
-
-.footer a {
-    color: inherit;
-}
-
-.footer p {
-    margin: 0;
-    padding: 1rem;
+    transform: scale(1.2);
 }
 
 .close-menu {
@@ -198,7 +115,7 @@
 
 @media (max-width: 800px) {
 
-    .intro-content, .grid-ajuda {
+    .intro-content, .grid-ajuda, .grid {
         grid-template-columns: 1fr;
     }
 
@@ -258,5 +175,13 @@
 
     .menu-spacing {
         display: none;
+    }
+
+    footer div {
+        padding: 24px;
+    }
+
+    footer {
+    display: block;
     }
 }
