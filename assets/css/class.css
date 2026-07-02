@@ -29,11 +29,6 @@
     height: 65px;
 }
 
-body .full-width {
-    width: 100%;
-    flex: 1 1 100%;
-}
-
 .botao, .botao-logo {
     background-color: #23A718;
     border-radius: 8px;

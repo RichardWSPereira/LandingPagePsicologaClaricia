@@ -120,14 +120,11 @@
     display: none;
 }
 
-.back-to-top {
+.btn-whatsapp {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
     height: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .video_apresentation {
@@ -152,12 +149,26 @@
 
 @media (max-width: 800px) {
 
-    .intro-content, .grid-ajuda, .grid {
+    .intro-content, .grid-ajuda, .grid, .grid-terapia, .grid-apresentation {
         grid-template-columns: 1fr;
     }
 
-    .feedback-img {
-        width: 100%;
+    .botao-logo, .botao-transparente {
+        margin: 1rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .depoimentos {
+        font-size: 4.5rem;
+    }
+
+    .estrelas {
+        font-size: 7rem;
+    }
+
+    .feedback-img, .footer img, .video_apresentation video{
         max-width: 100%;
         max-height: 100%;
     }
