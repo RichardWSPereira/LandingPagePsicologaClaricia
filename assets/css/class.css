@@ -85,7 +85,7 @@
   justify-content: space-between;
 }
 
-.duvida .paragrafo {
+.paragrafo {
   border-right: 1px solid var(--secundary-color);
   border-bottom: 1px solid var(--secundary-color);
   border-left: 1px solid var(--secundary-color);
@@ -105,12 +105,13 @@
   font-weight: bold;
 }
 
-.duvida.ativa .paragrafo {
+.ativa .paragrafo {
   height: fit-content;
   opacity: 1;
   padding: 24px;
 }
 
-.duvida.ativa h6::after {
+.ativa h6::after {
   content: "-";
 }
+

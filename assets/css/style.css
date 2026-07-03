@@ -149,27 +149,73 @@
 
 @media (max-width: 900px) {
 
-    .intro-content, .grid-ajuda, .grid, .grid-terapia, .grid-apresentation {
+    .grid-ajuda h6, .grid h6, .grid-terapia h6 {
+        font-size: 2.5rem;
+    }
+
+    .duvida h6 {
+        font-size: 2rem;
+    }
+    
+    h4 {
+        font-size: 3rem;
+    }
+    
+    .btn-intro a {
+        width: 70%;
+    }
+    
+    .intro-content,
+    .grid-ajuda,
+    .grid,
+    .grid-terapia,
+    .grid-apresentation {
+        justify-items: center;
         grid-template-columns: 1fr;
     }
 
-    .botao-logo, .botao-transparente {
+    .botao-logo,
+    .botao-transparente {
         margin: 1rem auto;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 1.6rem 1.6rem;
     }
-    
-    .depoimentos {
-        font-size: 4.5rem;
+
+    .grid h6::before,
+    .grid-terapia h6::before {
+        font-size: 4rem;
+        top: -1rem;
+        left: 1.5rem;
+    }
+
+    .grid h6 p,
+    .grid-terapia h6 p {
+        font-size: 2rem;
+    }
+
+    .paragrafo {
+        font-size: 1.5rem;
+    }
+
+    .depoimentos,
+    h2 {
+        font-size: 3rem;
     }
 
     .estrelas {
-        font-size: 7rem;
+        font-size: 5rem;
     }
 
-    .feedback-img, .footer img, .video_apresentation video{
-        max-width: 100%;
+    .feedback-img img:hover {
+        transform: initial;
+    }
+
+    .feedback-img,
+    .footer img,
+    .video_apresentation video {
+        max-width: 80%;
         max-height: 100%;
     }
 
@@ -225,11 +271,15 @@
         display: none;
     }
 
+    .btn-whatsapp {
+        bottom: 6rem;
+    }
+
     footer div {
         padding: 24px;
     }
 
     footer {
-    display: block;
+        display: block;
     }
 }
