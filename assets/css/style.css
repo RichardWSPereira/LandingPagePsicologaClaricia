@@ -105,10 +105,10 @@
     width: 100%;
     max-width: 30rem;
     max-height: 30rem;
-    overflow: hidden;
 }
 
 .feedback-img img {
+    border-radius: 30px;
     transition: all 300ms ease-in-out;
 }
 
@@ -149,12 +149,8 @@
 
 @media (max-width: 900px) {
 
-    .grid-ajuda h6, .grid h6, .grid-terapia h6 {
+    .grid-ajuda h6, .grid h6, .grid-terapia h6, .duvida h6 {
         font-size: 2.5rem;
-    }
-
-    .duvida h6 {
-        font-size: 2rem;
     }
     
     h4 {
@@ -196,7 +192,7 @@
     }
 
     .paragrafo {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .depoimentos,
