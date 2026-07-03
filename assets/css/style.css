@@ -147,7 +147,7 @@
 }
 
 
-@media (max-width: 640px) {
+@media (max-width: 900px) {
 
     .intro-content, .grid-ajuda, .grid, .grid-terapia, .grid-apresentation {
         grid-template-columns: 1fr;
